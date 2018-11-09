@@ -4,6 +4,7 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+\Assets\Sci-Fi Weapons\Base Pack\Heavy*
 
 # Visual Studio cache directory
 .vs/
