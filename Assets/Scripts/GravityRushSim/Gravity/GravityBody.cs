@@ -9,8 +9,7 @@ public class GravityBody : MonoBehaviour {
     GravityAttractor planet;
 
     private void Awake()
-    {
-
+    { 
         planet = GameObject.FindGameObjectWithTag("Planet").GetComponent<GravityAttractor>();
 
         // set unity gravity to false and constraint object rotaion
@@ -20,13 +19,7 @@ public class GravityBody : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        float distanceToPlanet = Vector3.Distance(transform.position, planet.transform.position);
-        if (distanceToPlanet < 100)
-        {
-            planet.Attract(transform);
-        }
-
-        // todo Debug.Log(distanceToPlanet);
-
+        planet.Attract(transform);
     }
+
 }

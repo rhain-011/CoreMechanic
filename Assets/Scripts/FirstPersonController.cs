@@ -58,7 +58,7 @@ public class FirstPersonController : MonoBehaviour {
         Ray ray = new Ray(transform.position, -transform.up);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 1 + 1f, groundedMask))
+        if (Physics.Raycast(ray, out hit, 1 + 2f, groundedMask))
         {
             grounded = true;
         }
