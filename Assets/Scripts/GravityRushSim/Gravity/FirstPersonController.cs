@@ -17,7 +17,7 @@ public class FirstPersonController : MonoBehaviour {
     Vector3 smoothMoveVelocity;
     float verticalLookRotation;
     Transform cameraTransform;
-    Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
 
 
     void Awake()
@@ -58,7 +58,7 @@ public class FirstPersonController : MonoBehaviour {
         Ray ray = new Ray(transform.position, -transform.up);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 1 + 50f, groundedMask))
+        if (Physics.Raycast(ray, out hit, 2, groundedMask))
         {
             grounded = true;
         }

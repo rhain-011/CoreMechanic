@@ -5,7 +5,7 @@ public class Gun : MonoBehaviour {
     public float damage = 10.0f;
     public float range = 100.0f;
     public float fireRate = 15.0f;
-    public float impactForce = 60.0f;
+    public float impactForce = 100.0f;
 
     //public GameObject impactEffect; reference to impact paricle effect
     public Camera fpsCam;
